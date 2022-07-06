@@ -1,5 +1,5 @@
 # all-together.github.io
-Purpose:
+Purpose: Promote users' fitness goals by providing different exercises and exercise tutorials to challenge users to reach their fitness goals and learn new exercises.
 
 
 
