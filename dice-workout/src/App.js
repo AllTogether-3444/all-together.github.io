@@ -1,4 +1,4 @@
-import React, { useState } from "react"; 8.3K (gzipped 3.3K)
+import React, { useState } from "react"; 
 import "./App.css";
 
 function App() {
