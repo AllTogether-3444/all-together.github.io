@@ -1,6 +1,9 @@
 {
   "dependencies": {
     "formik": "^2.2.9",
-    "react-router-dom": "^6.3.0"
+    "react-icons": "^4.4.0",
+    "react-loader-spinner": "^5.1.5",
+    "react-router-dom": "^6.3.0",
+    "yup": "^0.32.11"
   }
 }

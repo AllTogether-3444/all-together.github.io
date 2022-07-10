@@ -10,7 +10,7 @@ export const colors ={
     primary:"#3e0000",
     theme: "#c2b381",
     light1: "#F3F4F6",
-    Light2: "#E5E7EB",
+    light2: "#E5E7EB",
     dark1: "1F2937",
     dark2: "4B5563",
     dark3: "9CA3AF",
@@ -68,7 +68,7 @@ export const StyledButtom = styled(Link)`
    text-decoration: none;
    text-align: center;
    transition: eas-in-out 0.3s;
-
+   outline: 0;
 
    &:hover{
        background-color : ${colors.primary};
@@ -90,8 +90,10 @@ export const StyledTextInput = styled.input`
     padding-l=eft: 50px;
     font-size: 17px;
     letter-spacing: 1px;
-    color: ${coloer.light2};
+    color: ${colors.dark1};
+    background-color: ${colors.light2};
     border: 0;
+    outline: 0;
     display: block;
     margin: 5px auto 10px auto;
     transition: ease-in-out 0.3s;
@@ -124,6 +126,7 @@ export const StyledFormButton = styled.button`
     border-radius: 25px;
     color: ${colors.theme};
     transition: eas-in-out 0.3s;
+    outline: 0;
 
 
     &:hover{
@@ -132,3 +135,50 @@ export const StyledFormButton = styled.button`
         cursor: pointer;
     }
 `;
+
+export const ErrorMsg = styled.div`
+  font-size: 11px;
+  color: ${colors.red};
+  margin-top: -5px;
+  margin-bottom: 10px;
+  text-align: left;
+`;
+
+export const ExtraText = styled.p`
+    font-size: ${(props) => props.size}px;
+    text-align: center;
+    color: ${(props) => (props.color? props.color : colors.dark2)}
+    padding: 2px;
+    margin-top: 10px;
+    
+`;
+
+export const TextLink = styled(Link)`
+  text-decoration: none;
+  color: ${colors.theme};
+  transition: ease-in-out 0.3s
+
+  &:hover{
+      text-decoration: underline;
+      letter-spacing: 2px;
+      font-weight: bold;
+   }
+`;
+
+ //Icons
+ export const StyledIcon = styled.p`
+     color: ${colors.dark1};
+     position: absolute;
+     font-size: 21px;
+     top: 35px;
+     ${(props)} => props.right && 'right: 15px; '}
+     ${(props)} =>  props.right && 'left: 15px; '}
+ `;
+
+ //copyright #Light might the righ font
+ export const CopyrightText = style.p`
+   padding: 5px;
+   margin: 20px;
+   text-align: center;
+   color: ${colors.light2};  
+ `;

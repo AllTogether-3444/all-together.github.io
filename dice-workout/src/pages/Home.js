@@ -28,8 +28,8 @@ const Home = () => {
          </StyledSubTitle>
 
          <ButtonGroup>
-            <StyledButtom>Login</StyledButtom>
-         <StyledButtom>Register</StyledButtom>
+         <StyledButtom to="/login">Login</StyledButtom>
+         <StyledButtom to="/register">Register</StyledButtom>
          </ButtonGroup>
     </div>
   );
