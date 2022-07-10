@@ -1,25 +1,24 @@
-import React, { useState } from "react"; 
-import "./App.css";
+//Pages
+import Home from './pages/Home';
+import Login from './pages/Home';
+
+//styled components
+import { StyledContainer } from "./components/Styles";
+
+import {
+  BroeserRouter as Router, Switch, Route 
+}from 'react-router-dom';
+
 
 function App() {
   return (
-     <div className="App">
-       <div className="registration">
-         <h1>Registration</h1>
-         <label>Username</label>
-         <input type="text" />
-         <label>Password</label>
-         <input type="text" />
-         <button> Register </button>
-      </div>
-      <div className="login">
-        <h1>Registration</h1>
-        <input type="text" placeholder="Username..." />
-        <input type="password" placeholder="Password..." />
-        <button> Register </button>
-      </div>
-    </div>
-  );
+    <Router>
+    <StyledContainer>
+      <Login /> 
+    </StyledContainer>  
+    </Router>
+    
+  );  
 }
 
 export default App;
