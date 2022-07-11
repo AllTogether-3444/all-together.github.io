@@ -176,7 +176,7 @@ export const TextLink = styled(Link)`
  `;
 
  //copyright #Light might the righ font
- export const CopyrightText = style.p`
+ export const CopyrightText = styled.p`
    padding: 5px;
    margin: 20px;
    text-align: center;

@@ -19,22 +19,9 @@ function App() {
   return (
   <Router>
     <StyledContainer>
-      <Switch>
-        <Route path="/register">
-          <Register />
-          <Route>
-          <Route path="/login">
-          <Login />
-          <Route>
-          <Route path="/dashboard">
-          <Dashboard />
-          </Route>
-          <Route path="/">
-          <Home />
-          </Route>
-      </Switch>
+      <Register />
     </StyledContainer>  
-    </Router>
+  </Router>
     
   );  
 }
